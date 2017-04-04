@@ -1,0 +1,29 @@
+{
+  "name": "vue-demo",
+  "version": "1.0.0",
+  "description": "vue demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/dev.js",
+    "dist": "node build/prod.js"
+  },
+  "keywords": [
+    "vue",
+    "demo"
+  ],
+  "author": "李冬冬",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.2.6",
+    "vue-router": "^2.3.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "html-webpack-plugin": "^2.28.0",
+    "vue-loader": "^11.3.4",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.3.3",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.18.0"
+  }
+}
