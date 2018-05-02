@@ -4,8 +4,15 @@ var path = require('path'),
 
 module.exports = {
     entry: {
-        app: './src/app.js',
+        app: './src/main.js',
         vendor: ['vue', 'vue-router']
+    },
+    resolve: {
+        extensions: ['.js', '.vue', '.json'],
+        alias: {
+            '@': path.resolve(__dirname, '../src'),
+            vue: 'vue/dist/vue.js'
+        }
     },
     module: {
         /*loaders: [
@@ -21,13 +28,6 @@ module.exports = {
               loader: 'vue-loader'
             }
         ]
-    },
-    resolve: {
-        extensions: ['.js', '.vue', '.json'],
-        alias: {
-            '@': path.resolve(__dirname, '../src'),
-            vue: 'vue/dist/vue.js'
-        }
     },
     output: {
         path: config.build.assetsRoot,

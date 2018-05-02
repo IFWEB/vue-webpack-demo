@@ -13,6 +13,11 @@ config.plugins.push(
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
+    }),
+    new webpack.DefinePlugin({
+        'process.env': {
+            NODE_ENV: JSON.stringify('dev')
+        }
     })
 );
 
